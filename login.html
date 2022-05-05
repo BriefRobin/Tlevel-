@@ -1,0 +1,115 @@
+<!-- Navbar -->
+<head>
+<body>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="profile.html">GibJohn Tutoring</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <script>  
+        function validation()  
+        {  
+            var id=document.f1.user.value;  
+            var ps=document.f1.pass.value;  
+            if(id.length=="" && ps.length=="") {  
+                alert("User Name and Password fields are empty");  
+                return false;  
+            }  
+            else  
+            {  
+                if(id.length=="") {  
+                    alert("User Name is empty");  
+                    return false;  
+                }   
+                if (ps.length=="") {  
+                alert("Password field is empty");  
+                return false;  
+                }  
+            }                             
+        }  
+    </script>  
+</body>     
+</html>  
+
+
+
+<!--Login-->
+
+    <html>  
+<head>  
+    <title>PHP login system</title>  
+    <!--inserting login.css file inside index.html -->   
+    <link rel="stylesheet" href="login.css">
+</head>  
+<body>  
+    
+    <div id = "frm">  
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2"></div>
+                <div class="col-lg-6 col-md-8 login-box">
+                    <div class="col-lg-12 login-key">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-12 login-title">
+        <h1 style="color: white;">  Profile Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+
+            
+                <label> <p style= "color: rgb(131, 127, 127)";> Username:  </p> </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label>  <p style= "color: rgb(131, 127, 127)";> PASSWORD:   </p>  </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            <p>     
+                <input type =  "submit" id = "btn" style= "color: rgb(131, 127, 127)"  value = "login" />  
+            </p>  
+        </form>  
+    </div>  
+
+
+
+   <!--// validation for empty field -->    
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>     
+</html>  
+
